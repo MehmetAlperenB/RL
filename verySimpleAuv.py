@@ -22,17 +22,16 @@ class PDController(object):
     """ Simple controller that emulates the action of a model used in stable baselines.
     The returned forces are capped at +/- 1 to mimic actions of an RL agent.
     Observations are assumed to start with direction to target and scaled heading error. """
-    def __init__(self, dt, P=[1., 1., 1.], D=[0.05, 0.05, 0.01], noiseSigma=None):
+    def __init__(self, dt, P=[1., 1., 1.], D=[0.05, 0.05, 0.01]):
         self.P = np.array(P)
         self.D = np.array(D)
         self.dt = dt
         self.oldObs = None
-        self.noiseSigma = noiseSigma
 
     def predict(self, obs, deterministic=True):
         # NOTE deterministic is a dummy kwarg needed to make this function look
         # like a stable baselines equivalent
-        states = obs#np.zeros(len(self.P))
+        states = np.zeros(len(self.P))
 
         x = obs[:3]
 
@@ -41,12 +40,9 @@ class PDController(object):
 
         actions = np.clip(x*self.P + (x - self.oldObs)/self.dt*self.D, -1., 1.)
 
-        if self.noiseSigma is not None:
-            actions += np.random.normal(loc=0., scale=self.noiseSigma, size=actions.shape)
-
         self.oldObs = x
 
-        return np.clip(actions, -1., 1.), states
+        return actions, states
 
 
 def headingError(psi_d, psi):
@@ -74,7 +70,7 @@ def headingError(psi_d, psi):
 
 class AuvEnv(gym.Env):
     def __init__(self, seed=None, dt=0.02, noiseMagCoeffs=0.0, noiseMagActuation=0.0,
-                 currentVelScale=1.0, currentTurbScale=2.0, stopOnBoundsExceeded=True):
+                 currentVelScale=1.0, currentTurbScale=2.0):
         # Call base class constructor.
         super(AuvEnv, self).__init__()
         self.seed = seed
@@ -82,11 +78,6 @@ class AuvEnv(gym.Env):
         # Tied to the no. time values stored in the turbulence data set.
         # self._max_episode_steps = 1500
         self._max_episode_steps = 250
-
-        # Whether or not to stop when bounds are exceeded. Used to disable this
-        # check when generating data for adversarial pre-training of the agent
-        # that requires episodes of equal length.
-        self.stopOnBoundsExceeded = stopOnBoundsExceeded
 
         # Updates at fixed intervals.
         self.iStep = 0
@@ -136,7 +127,7 @@ class AuvEnv(gym.Env):
                                            shape=(self.lenAction,), dtype=np.float32)
 
         # Observation space.
-        lenState = 9 + 2
+        lenState = 9
         self.observation_space = gym.spaces.Box(
             -1*np.ones(lenState, dtype=np.float32),
             np.ones(lenState, dtype=np.float32),
@@ -167,8 +158,7 @@ class AuvEnv(gym.Env):
                 min(1., max(-1., (perr[0]-self.perr_o[0])/0.025)),
                 min(1., max(-1., (perr[1]-self.perr_o[1])/0.025)),
             ]),
-            np.clip(velocities/[0.2, 0.2, 30./180.*np.pi], -1., 1.),
-            np.zeros(2),  # Placeholder for additional state variables used only in CFD
+            np.clip(velocities/[0.2, 0.2, 30./180.*np.pi], -1., 1.)
         ])
 
         return newState
@@ -221,7 +211,7 @@ class AuvEnv(gym.Env):
 
         return self.state
 
-    def step(self, action):
+    def step(self, action, Beta=0.0, Eta=0.0):
         # Set new time.
         self.iStep += 1
         self.time += self.dt
@@ -293,12 +283,10 @@ class AuvEnv(gym.Env):
 
         # Check if domain exceeded.
         if (position[0] < self.xMinMax[0]) or (position[0] > self.xMinMax[1]):
-            if self.stopOnBoundsExceeded:
-                done = True
+            done = True
             bonus += -100.
         if (position[1] < self.yMinMax[0]) or (position[1] > self.yMinMax[1]):
-            if self.stopOnBoundsExceeded:
-                done = True
+            done = True
             bonus += -100.
 
         # Compute errors.
@@ -324,13 +312,21 @@ class AuvEnv(gym.Env):
             # -0.05*np.sum(action**2.),
 
             # --- inspider by Woo et al. (2019) ---
-            np.exp(-5.*np.linalg.norm(perr)),
-            np.exp(-0.1*np.abs(herr/np.pi*180.)) if np.abs(herr) < np.pi/2. else -np.exp(-0.1*(180. - np.abs(herr/np.pi*180.))),
-            np.exp(-0.6*rmsAc),
+            #previous reward definition
+            #np.exp(-5.*np.linalg.norm(perr)),
+            #np.exp(-0.1*np.abs(herr/np.pi*180.)) if np.abs(herr) < np.pi/2. else -np.exp(-0.1*(180. - np.abs(herr/np.pi*180.))),
+            #np.exp(-0.6*rmsAc),
 
             # Additional term which encourages as little actuation as possible.
             # np.exp(-5.*np.sum(np.abs(action))/len(action)),
-            -0.1*np.sum(action**2.)/len(action),
+            #-0.1*np.sum(action**2.)/len(action),
+
+            #--- New reward definiton by Yasin Ertas
+            #definition of position reward
+            10 if np.sqrt(perr[0]*perr[0]+perr[1]*perr[1]) < Beta else -10, #defining of Euclidian distance
+            10 if (herr*180/np.pi) < Eta else -10, #convertion from radian to degree
+            -5*(np.abs(Fset)/self.maxForce),
+            -5*(np.abs(Nset)/self.maxMoment),
 
             # ---
             # Additional bonuses or penalties.
