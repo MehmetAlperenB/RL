@@ -8,6 +8,23 @@
 
 -------------------------------------------------------------------------------------
 
+Version      : v0.0.1.201
+Author       : Mehmet Alperen BAKICI
+Release Date : 03.06.2023
+Branch Name  : DDPG_Entegrasyonu
+
+-------------------------------------------------------------------------------------
+
+Notes: 
+    Yasin's working files was added. These files updated new versions.
+    * DDPG.ipynb
+    * VerySimpleAuv.py
+
+-------------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------------------------------
+
 Version      : v0.0.1.200
 Author       : Mehmet Alperen BAKICI
 Release Date : 03.06.2023
