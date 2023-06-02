@@ -6,6 +6,24 @@
                                         RESTRICTED
 -------------------------------------------------------------------------------------
 
+-------------------------------------------------------------------------------------
+
+Version      : v0.0.1.200
+Author       : Mehmet Alperen BAKICI
+Release Date : 03.06.2023
+Branch Name  : DDPG_Entegrasyonu
+
+-------------------------------------------------------------------------------------
+
+Notes: 
+    This is DDPG integration branch and its first upload commit.
+
+-------------------------------------------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------------
+
 Version      : v0.0.1
 Author       : Mehmet Alperen BAKICI
 Release Date : 03.06.2023
@@ -15,5 +33,6 @@ Release Date : 03.06.2023
 Notes: 
     This is the first upload for the Autonomous Undervehicle Project on GitHub Repo
 
-"""
+
+
    
