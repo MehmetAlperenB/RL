@@ -5,6 +5,27 @@
 
                                         RESTRICTED
 -------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------
+Version      : v0.0.2.404
+Author       : Mehmet Alperen BAKICI, Mustafa UNVER, Yasin ERTAS, Siyami Gurkan KUZUCU,
+Release Date : 07.06.2023 02:45
+Branch Name  : Model_And_Hyperparameters_Changes
+-------------------------------------------------------------------------------------
+Notes:
+    Changing hyperparameters. Learning rates are changed:
+    OLD --> NEW :
+    LR_ACTOR    1e-3  --> 1e-5
+    LR_CRITIC   1e-2  --> 1e-4
+
+    Hyperparameters
+    BUFFER_SIZE = int(1e5)  # replay buffer size
+    BATCH_SIZE = 128        # minibatch size
+    GAMMA = 0.99            # discount factor
+    TAU = 1e-3              # for soft update of target parameters
+    LR_ACTOR = 1e-5         # learning rate of the actor
+    LR_CRITIC = 1e-4        # learning rate of the critic
+    WEIGHT_DECAY = 0        # L2 weight decay
+--------------------------------------------------------------------------------
 
 -------------------------------------------------------------------------------------
 Version      : v0.0.2.403
