@@ -136,7 +136,7 @@ class AuvEnv(gym.Env):
                                            shape=(self.lenAction,), dtype=np.float32)
 
         # Observation space.
-        lenState = 9 + 2
+        lenState = 9
         self.observation_space = gym.spaces.Box(
             -1*np.ones(lenState, dtype=np.float32),
             np.ones(lenState, dtype=np.float32),

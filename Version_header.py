@@ -7,6 +7,18 @@
 -------------------------------------------------------------------------------------
 
 -------------------------------------------------------------------------------------
+Version      : v0.0.2.402
+Author       : Mehmet Alperen BAKICI, Mustafa UNVER, Yasin ERTAS, Siyami Gurkan KUZUCU,
+Release Date : 06.06.2023 01:00
+Branch Name  : Model_And_Hyperparameters_Changes
+-------------------------------------------------------------------------------------
+Notes:
+    Adding new layer to the model.py
+    Note: Actor  has 4th hidden layer,
+          Critic has 3th hidden layer.
+--------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------------
 Version      : v0.0.2.401
 Author       : Mehmet Alperen BAKICI
 Release Date : 06.06.2023 23:50

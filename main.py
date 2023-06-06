@@ -20,7 +20,7 @@ env = auv.AuvEnv(**env_kwargs)
 agent = Agent(state_size=9, action_size=3, random_seed=2)
 
 
-def ddpg(n_episodes=1000, max_t=500, print_every=100):
+def ddpg(n_episodes=750, max_t=250, print_every=100):
     scores_deque = deque(maxlen=print_every)
     scores = []
     for i_episode in range(1, n_episodes + 1):
