@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f3c55291-03e9-4a49-85d2-8e0dfa12e374" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agentData/DDPG_try0_0.monitor.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agentData/DDPG_try0_0.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agentData/DDPG_try0_0_replayBuffer.pkl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agentData/DDPG_try0_1.monitor.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agentData/DDPG_try0_1.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agentData/DDPG_try0_1_replayBuffer.pkl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agentData/DDPG_try0_2.monitor.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agentData/DDPG_try0_2.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agentData/DDPG_try0_2_replayBuffer.pkl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agentData/DDPG_try0_convergence.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agentData/DDPG_try0_hyperparameters.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agentData/SAC_try9_trainingTest_lr_2e-3_target_entropy_-1.0_ent_coef_auto_0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agentData/SAC_try9_trainingTest_lr_2e-3_target_entropy_-1.0_ent_coef_auto_0.monitor.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agentData/SAC_try9_trainingTest_lr_2e-3_target_entropy_-1.0_ent_coef_auto_0_replayBuffer" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agentData/SAC_try9_trainingTest_lr_2e-3_target_entropy_-1.0_ent_coef_auto_1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agentData/SAC_try9_trainingTest_lr_2e-3_target_entropy_-1.0_ent_coef_auto_1.monitor.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agentData/SAC_try9_trainingTest_lr_2e-3_target_entropy_-1.0_ent_coef_auto_1_replayBuffer" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agentData/SAC_try9_trainingTest_lr_2e-3_target_entropy_-1.0_ent_coef_auto_2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agentData/SAC_try9_trainingTest_lr_2e-3_target_entropy_-1.0_ent_coef_auto_2.monitor.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agentData/SAC_try9_trainingTest_lr_2e-3_target_entropy_-1.0_ent_coef_auto_2_replayBuffer" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agentData/SAC_try9_trainingTest_lr_2e-3_target_entropy_-1.0_ent_coef_auto_convergence.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agentData/SAC_try9_trainingTest_lr_2e-3_target_entropy_-1.0_ent_coef_auto_hyperparameters.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agentData/SAC_try9_trainingTest_lr_2e-3_target_entropy_-8.0_ent_coef_auto_0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agentData/SAC_try9_trainingTest_lr_2e-3_target_entropy_-8.0_ent_coef_auto_0.monitor.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agentData/SAC_try9_trainingTest_lr_2e-3_target_entropy_-8.0_ent_coef_auto_0_replayBuffer" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agentData/SAC_try9_trainingTest_lr_2e-3_target_entropy_-8.0_ent_coef_auto_1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agentData/SAC_try9_trainingTest_lr_2e-3_target_entropy_-8.0_ent_coef_auto_1.monitor.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agentData/SAC_try9_trainingTest_lr_2e-3_target_entropy_-8.0_ent_coef_auto_1_replayBuffer" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agentData/SAC_try9_trainingTest_lr_2e-3_target_entropy_-8.0_ent_coef_auto_2.monitor.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agentData/SAC_try9_trainingTest_lr_2e-3_target_entropy_-8.0_ent_coef_auto_convergence.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agentData/SAC_try9_trainingTest_lr_2e-3_target_entropy_auto_ent_coef_auto_0.01_0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agentData/SAC_try9_trainingTest_lr_2e-3_target_entropy_auto_ent_coef_auto_0.01_0.monitor.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agentData/SAC_try9_trainingTest_lr_2e-3_target_entropy_auto_ent_coef_auto_0.01_0_replayBuffer" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agentData/SAC_try9_trainingTest_lr_2e-3_target_entropy_auto_ent_coef_auto_0.01_1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agentData/SAC_try9_trainingTest_lr_2e-3_target_entropy_auto_ent_coef_auto_0.01_1.monitor.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agentData/SAC_try9_trainingTest_lr_2e-3_target_entropy_auto_ent_coef_auto_0.01_1_replayBuffer" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agentData/SAC_try9_trainingTest_lr_2e-3_target_entropy_auto_ent_coef_auto_0.01_2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agentData/SAC_try9_trainingTest_lr_2e-3_target_entropy_auto_ent_coef_auto_0.01_2.monitor.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agentData/SAC_try9_trainingTest_lr_2e-3_target_entropy_auto_ent_coef_auto_0.01_2_replayBuffer" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agentData/SAC_try9_trainingTest_lr_2e-3_target_entropy_auto_ent_coef_auto_0.01_convergence.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agentData/SAC_try9_trainingTest_lr_2e-3_target_entropy_auto_ent_coef_auto_0.01_hyperparameters.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agentData/SAC_try9_trainingTest_lr_2e-3_target_entropy_auto_ent_coef_auto_0.monitor.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agentData/SAC_try9_trainingTest_lr_2e-3_target_entropy_auto_ent_coef_auto_0.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agentData/SAC_try9_trainingTest_lr_2e-3_target_entropy_auto_ent_coef_auto_0_replayBuffer.pkl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agentData/SAC_try9_trainingTest_lr_2e-3_target_entropy_auto_ent_coef_auto_1.monitor.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agentData/SAC_try9_trainingTest_lr_2e-3_target_entropy_auto_ent_coef_auto_1.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agentData/SAC_try9_trainingTest_lr_2e-3_target_entropy_auto_ent_coef_auto_1_replayBuffer.pkl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agentData/SAC_try9_trainingTest_lr_2e-3_target_entropy_auto_ent_coef_auto_2.monitor.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agentData/SAC_try9_trainingTest_lr_2e-3_target_entropy_auto_ent_coef_auto_2.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agentData/SAC_try9_trainingTest_lr_2e-3_target_entropy_auto_ent_coef_auto_2_replayBuffer.pkl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agentData/SAC_try9_trainingTest_lr_2e-3_target_entropy_auto_ent_coef_auto_5.0_0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agentData/SAC_try9_trainingTest_lr_2e-3_target_entropy_auto_ent_coef_auto_5.0_0.monitor.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agentData/SAC_try9_trainingTest_lr_2e-3_target_entropy_auto_ent_coef_auto_5.0_0_replayBuffer" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agentData/SAC_try9_trainingTest_lr_2e-3_target_entropy_auto_ent_coef_auto_5.0_1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agentData/SAC_try9_trainingTest_lr_2e-3_target_entropy_auto_ent_coef_auto_5.0_1.monitor.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agentData/SAC_try9_trainingTest_lr_2e-3_target_entropy_auto_ent_coef_auto_5.0_1_replayBuffer" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agentData/SAC_try9_trainingTest_lr_2e-3_target_entropy_auto_ent_coef_auto_5.0_2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agentData/SAC_try9_trainingTest_lr_2e-3_target_entropy_auto_ent_coef_auto_5.0_2.monitor.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agentData/SAC_try9_trainingTest_lr_2e-3_target_entropy_auto_ent_coef_auto_5.0_2_replayBuffer" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agentData/SAC_try9_trainingTest_lr_2e-3_target_entropy_auto_ent_coef_auto_5.0_convergence.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agentData/SAC_try9_trainingTest_lr_2e-3_target_entropy_auto_ent_coef_auto_5.0_hyperparameters.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agentData/SAC_try9_trainingTest_lr_2e-3_target_entropy_auto_ent_coef_auto_convergence.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agentData/SAC_try9_trainingTest_lr_2e-3_target_entropy_auto_ent_coef_auto_hyperparameters.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agentData/TD3_try0_0.monitor.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agentData/TD3_try0_0.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agentData/TD3_try0_0_replayBuffer.pkl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agentData/TD3_try0_1.monitor.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agentData/TD3_try0_1.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agentData/TD3_try0_1_replayBuffer.pkl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agentData/TD3_try0_2.monitor.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agentData/TD3_try0_2.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agentData/TD3_try0_2_replayBuffer.pkl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agentData/TD3_try0_convergence.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agentData/TD3_try0_hyperparameters.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/checkpoint_actor.pth" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/checkpoint_critic.pth" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/episodeAnim_test.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figures/scalingTest.png" beforeDir="false" afterPath="$PROJECT_DIR$/Figures/scalingTest.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Version_header.py" beforeDir="false" afterPath="$PROJECT_DIR$/Version_header.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ddpg_agent.py" beforeDir="false" afterPath="$PROJECT_DIR$/ddpg_agent.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/model.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2Qkp7FXq7ZYQDu8Mt2Khb9Xue7w" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "Merging Gelistirme",
+    "last_opened_file_path": "C:/Users/mehme/OneDrive/Masaüstü/FORK/RL",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\mehme\OneDrive\Masaüstü\FORK\RL" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\mehme\OneDrive\Masaüstü\FORK\RL" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="script_2_testImitation" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="RL" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/script_2_testImitation.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f3c55291-03e9-4a49-85d2-8e0dfa12e374" name="Changes" comment="" />
+      <created>1685907264905</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1685907264905</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/verySimpleAuv.py</url>
+          <line>6</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
