@@ -7,6 +7,26 @@
 -------------------------------------------------------------------------------------
 
 -------------------------------------------------------------------------------------
+Version      : v0.0.2.407
+Author       : Mehmet Alperen BAKICI, Siyami Gurkan KUZUCU
+Release Date : 07.06.2023 04:00
+Branch Name  : Model_And_Hyperparameters_Changes
+-------------------------------------------------------------------------------------
+Notes:
+    Actor  network has 3 hidden layer, Critic network has 2 hidden layer.
+    All hyperparameters are listed below.
+
+    Hyperparameters
+    BUFFER_SIZE = int(1e6)  # replay buffer size
+    BATCH_SIZE = 256        # minibatch size
+    GAMMA = 0.99            # discount factor
+    TAU = 1e-3              # for soft update of target parameters
+    LR_ACTOR = 1e-5         # learning rate of the actor
+    LR_CRITIC = 1e-4        # learning rate of the critic
+    WEIGHT_DECAY = 0     # L2 weight decay
+-------------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------------
 Version      : v0.0.2.406
 Author       : Mehmet Alperen BAKICI, Siyami Gurkan KUZUCU
 Release Date : 07.06.2023 03:00
